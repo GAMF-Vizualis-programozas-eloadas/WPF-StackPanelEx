@@ -1,0 +1,35 @@
+﻿<Window x:Class="StackPanel_Example.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StackPanel_Example"
+        mc:Ignorable="d"
+        Title="StackPanel and UniformGrid example" Height="400" Width="400">
+	<UniformGrid Rows="3" Columns="1">
+		<Border BorderThickness="1" BorderBrush="Black" Margin="5">
+			<StackPanel Orientation="Vertical">
+				<Button>First</Button>
+				<Button>Second</Button>
+				<Button>Third</Button>
+				<Button>Fourth</Button>
+			</StackPanel>
+		</Border>
+		<Border BorderThickness="1" BorderBrush="Black" Margin="5">
+			<StackPanel Orientation="Horizontal">
+				<Button>First</Button>
+				<Button>Second</Button>
+				<Button>Third</Button>
+				<Button>Fourth</Button>
+			</StackPanel>
+		</Border>
+		<Border BorderThickness="1" BorderBrush="Black" Margin="5">
+			<StackPanel Orientation="Horizontal">
+				<Button Margin="10">First</Button>
+				<Button>Second</Button>
+				<Button>Third</Button>
+				<Button VerticalAlignment="Top">Fourth</Button>
+			</StackPanel>
+		</Border>
+	</UniformGrid>
+</Window>
